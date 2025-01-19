@@ -4,7 +4,7 @@ This extension partially handles **Server-Sent Events (SSE)** within Burp Suite 
 
 ## Features
 
-- **Near real-time SSE parsing**: Discovers “`event: data:`” lines from chunked SSE.
+- **Near real-time SSE parsing**: Discovers `event: data:` lines from chunked SSE.
 - **Table view**: Displays captured events (time, session, event, ID, data).
 - **Logs & controls**: Clear logs, clear table data, and see SSE debug info.
 
