@@ -22,7 +22,7 @@ This extension partially handles **Server-Sent Events (SSE)** within Burp Suite 
 
 3. You should see **SSE_Parser** as a new tab in the main Burp interface once it loads successfully.
 
-   ![SSE_Parser Tab Screenshot](./sse.png)
+   ![SSE_Parser Tab Screenshot](./img/sse.png)
    
 ## Usage
 
