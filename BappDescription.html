@@ -1,0 +1,21 @@
+<p>SSE Parser adds a first-class view for Server-Sent Events (SSE) to Burp Suite. It intercepts, inspects, modifies, replays and injects events in real time without any configuration, because Burp's proxy API buffers responses before firing the extension callback, which means that callback never fires for a persistent SSE stream.</p>
+
+<p>The extension works around this by rewriting each SSE request to go through a small embedded relay on localhost. The relay opens the upstream connection with the original cookies and auth, tees the bytes back to Burp and the browser, and parses every event for the UI.</p>
+
+<p><strong>What you can do with it:</strong></p>
+<ul>
+    <li>Pause every SSE event at the boundary and Forward, edit, or Drop it before the browser sees it</li>
+    <li>Inject arbitrary events into any live stream</li>
+    <li>Replay any captured event to the currently open stream</li>
+    <li>Send any event to Repeater as a synthetic POST with pre-tagged headers</li>
+    <li>Search across URL, event, id and data with a single field (regex supported)</li>
+    <li>See a line-by-line diff against the previous event of the same type</li>
+    <li>Pretty-print JSON data fields automatically</li>
+    <li>Track arrival rate with a 60-second sparkline and a Δt column in the table</li>
+    <li>Spot browser auto-reconnects via a warm row tint</li>
+    <li>Get one tab per endpoint plus an All tab</li>
+    <li>Export every captured event to JSON or CSV</li>
+    <li>Route upstream connections through a specific proxy</li>
+</ul>
+
+<p>Each event type (message, heartbeat, alert, metrics) gets a distinct cell color in the Event column so you can scan the table quickly, similar to how Burp colors HTTP status codes in HTTP history.</p>

@@ -1,0 +1,13 @@
+Uuid: f8338a472b99415ba5349e45b483d334
+ExtensionType: 1
+Name: SSE Parser
+RepoName: sse-parser
+ScreenVersion: 2.0.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: UncleJ4ck
+ShortDescription: Intercept, inspect, modify and inject Server-Sent Events (SSE) in real time.
+EntryPoint: target/sse-parser-2.0.0.jar
+BuildCommand: mvn clean package -DskipTests=true -B
+SupportedProducts: Pro, Community
