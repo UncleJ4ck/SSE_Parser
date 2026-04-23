@@ -94,19 +94,6 @@ Type `host:port` in the Proxy field in the toolbar and press Enter. Leave blank 
 
 ---
 
-## Testing locally
-
-A small Python SSE server is included for quick testing:
-
-```bash
-python3 sse_test_server.py
-# serves HTML + SSE at http://localhost:7788
-```
-
-Point a Burp-proxied browser at `http://localhost:7788` and events start flowing into the extension tab.
-
----
-
 ## Notes
 
 - The relay binds to `localhost` only, nothing on the network can reach it directly.
